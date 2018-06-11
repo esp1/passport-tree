@@ -1,0 +1,48 @@
+.editable-number {
+  position: relative;
+  padding: 0.5em;
+
+  .control {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2em;
+    text-align: center;
+
+    &.plus {
+      bottom: 2em;
+      border-radius: 50% 50% 0 0;
+
+      .fa {
+        bottom: 0.5em;
+      }
+    }
+
+    &.minus {
+      top: 2em;
+      border-radius: 0 0 50% 50%;
+
+      .fa {
+        top: 0.5em;
+      }
+    }
+
+    .fa {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &:hover {
+    background-color: darkslateblue;
+    color: white;
+
+    .control {
+      display: initial;
+      background-color: darkslateblue;
+    }
+  }
+}

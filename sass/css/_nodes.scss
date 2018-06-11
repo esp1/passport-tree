@@ -1,0 +1,103 @@
+.node {
+  margin-left: 2rem;
+
+  .item {
+    padding: 1rem;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .toolbar {
+    border-radius: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 1em;
+    color: grey;
+
+    &:hover {
+      background-color: cornflowerblue;
+    }
+  }
+
+  .item, .toolbar {
+    .hidden {
+      display: none;
+    }
+
+    &:hover {
+      color: white;
+
+      .hidden {
+        display: initial;
+      }
+    }
+  }
+}
+
+.root {
+  .item {
+    color: purple;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    &:hover {
+      background-color: purple;
+      color: white;
+    }
+  }
+
+  font-size: 1.2rem;
+
+  .factory {
+    .item {
+      color: brown;
+      font-size: 1.2rem;
+
+      input {
+        border: none;
+        background-color: transparent;
+        color: grey;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        &:hover, &:focus {
+          outline: none;
+        }
+      }
+
+      &:hover {
+        background-color: brown;
+        color: white;
+
+        input {
+          color: lightgrey;
+        }
+      }
+    }
+
+    .children {
+      margin-bottom: 0.5em;
+
+      .child {
+        padding-left: 1em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+
+        &:hover {
+          background-color: whitesmoke;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  margin-left: 1em;
+}
+
+.folder-toggle {
+  margin-right: 0.5em;
+}
