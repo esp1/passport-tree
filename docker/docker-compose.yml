@@ -4,9 +4,10 @@ services:
   passport-tree:
     image: 572787244808.dkr.ecr.us-east-1.amazonaws.com/passport-tree
     environment:
-      - VIRTUAL_HOST=passport-tree.mecha1.com
-      - LETSENCRYPT_HOST=passport-tree.mecha1.com
+      - VIRTUAL_HOST=passport.mecha1.com
+      - LETSENCRYPT_HOST=passport.mecha1.com
       - LETSENCRYPT_EMAIL=esp@mecha1.com
+      - HTTPS_METHOD=nohttps
     volumes:
       - boot:/.boot
       - m2:/m2
